@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FlickImageFinder" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LJU-wi-rsD">
+                                <rect key="frame" x="16" y="105" width="343" height="0.0"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Search Image Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5w6-38-COY">
+                                <rect key="frame" x="16" y="416" width="308" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Latitude" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="XNL-jC-g8J">
+                                <rect key="frame" x="16" y="504" width="120" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter Longitude" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="7p8-tw-FTg">
+                                <rect key="frame" x="170" y="504" width="137" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Latitude" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="6If-oR-aMO">
+                                <rect key="frame" x="28" y="553" width="57" height="16"/>
+                                <color key="backgroundColor" red="0.86781913042068481" green="0.96638315916061401" blue="0.95294302701950073" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="ICX-v6-nyA"/>
+                                    <constraint firstAttribute="width" constant="57" id="Y5a-Ms-PYn"/>
+                                </constraints>
+                                <color key="textColor" red="0.86781913042068481" green="0.96638315916061401" blue="0.95294302701950073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FlickImageFinder" textAlignment="center" lineBreakMode="wordWrap" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lee-82-SM5">
+                                <rect key="frame" x="81" y="25" width="226" height="22"/>
+                                <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                <color key="textColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="highlightedColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="shadowColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SCn-On-yqD">
+                                <rect key="frame" x="16" y="587" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="inL-nY-67h"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wz8-xI-l13">
+                                <rect key="frame" x="332" y="419" width="24" height="24"/>
+                                <state key="normal" image="Search Icon"/>
+                                <connections>
+                                    <action selector="searchByPhrase:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PLA-UQ-syh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I4j-Xb-oCT">
+                                <rect key="frame" x="335" y="510" width="24" height="24"/>
+                                <state key="normal" image="Search Icon"/>
+                                <connections>
+                                    <action selector="searchByLatLon:" destination="BYZ-38-t0r" eventType="touchUpInside" id="WLj-AE-52r"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AUN-0m-5oH">
+                                <rect key="frame" x="16" y="186" width="340" height="128"/>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="Longitude" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WKC-OT-1sB">
+                                <rect key="frame" x="204" y="553" width="69" height="17"/>
+                                <color key="backgroundColor" red="0.86781913042068481" green="0.96638315916061401" blue="0.95294302701950073" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="69" id="LV2-Tg-nd2"/>
+                                </constraints>
+                                <color key="textColor" red="0.86781913042068481" green="0.96638315916061401" blue="0.95294302701950073" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98539485039999997" green="0.42500479740000002" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="LJU-wi-rsD" firstAttribute="leading" secondItem="5w6-38-COY" secondAttribute="leading" id="0iQ-7a-TgU"/>
+                            <constraint firstItem="XNL-jC-g8J" firstAttribute="leading" secondItem="SCn-On-yqD" secondAttribute="leading" id="2VH-FH-nTe"/>
+                            <constraint firstItem="XNL-jC-g8J" firstAttribute="baseline" secondItem="7p8-tw-FTg" secondAttribute="baseline" id="2ni-6P-evL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="5w6-38-COY" secondAttribute="trailing" constant="51" id="3QZ-kq-5su"/>
+                            <constraint firstItem="wz8-xI-l13" firstAttribute="top" secondItem="AUN-0m-5oH" secondAttribute="bottom" constant="105" id="5nF-Sg-SGs"/>
+                            <constraint firstItem="7p8-tw-FTg" firstAttribute="centerX" secondItem="WKC-OT-1sB" secondAttribute="centerX" id="5vE-8l-XzS"/>
+                            <constraint firstItem="XNL-jC-g8J" firstAttribute="centerX" secondItem="6If-oR-aMO" secondAttribute="centerX" constant="19.5" id="7on-hJ-eHP"/>
+                            <constraint firstItem="AUN-0m-5oH" firstAttribute="bottom" secondItem="wz8-xI-l13" secondAttribute="top" constant="-233" id="8AV-Et-2Jc"/>
+                            <constraint firstItem="LJU-wi-rsD" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="DYE-cl-4GJ"/>
+                            <constraint firstItem="5w6-38-COY" firstAttribute="leading" secondItem="XNL-jC-g8J" secondAttribute="leading" id="EHD-um-FzN"/>
+                            <constraint firstItem="AUN-0m-5oH" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="FdE-mV-F7E"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="AUN-0m-5oH" secondAttribute="trailing" constant="19" id="HYd-3e-Gu2"/>
+                            <constraint firstItem="wz8-xI-l13" firstAttribute="leading" secondItem="I4j-Xb-oCT" secondAttribute="leading" constant="-3" id="ITV-Zq-SnF"/>
+                            <constraint firstItem="6If-oR-aMO" firstAttribute="top" secondItem="WKC-OT-1sB" secondAttribute="top" id="Jaa-tQ-SsN"/>
+                            <constraint firstItem="AUN-0m-5oH" firstAttribute="top" secondItem="lee-82-SM5" secondAttribute="top" id="Uoa-jc-pUK"/>
+                            <constraint firstItem="5w6-38-COY" firstAttribute="trailing" secondItem="7p8-tw-FTg" secondAttribute="trailing" constant="17" id="V86-Bx-VLk"/>
+                            <constraint firstItem="LJU-wi-rsD" firstAttribute="trailing" secondItem="SCn-On-yqD" secondAttribute="trailing" id="ZEk-bl-zPA"/>
+                            <constraint firstItem="AUN-0m-5oH" firstAttribute="top" secondItem="lee-82-SM5" secondAttribute="bottom" constant="139" id="b96-yM-Ozd"/>
+                            <constraint firstItem="LJU-wi-rsD" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="bzT-Jz-JMN"/>
+                            <constraint firstItem="6If-oR-aMO" firstAttribute="top" secondItem="XNL-jC-g8J" secondAttribute="bottom" constant="19" id="fgD-o7-fxy"/>
+                            <constraint firstItem="lee-82-SM5" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="5" id="fzG-3q-0aR"/>
+                            <constraint firstItem="wz8-xI-l13" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="332" id="gZg-g3-z6k"/>
+                            <constraint firstItem="lee-82-SM5" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="81" id="gu8-Rt-0is"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="WKC-OT-1sB" secondAttribute="trailing" constant="102" id="jrP-B3-rde"/>
+                            <constraint firstItem="XNL-jC-g8J" firstAttribute="top" secondItem="5w6-38-COY" secondAttribute="bottom" constant="58" id="mZ5-d6-TNN"/>
+                            <constraint firstAttribute="bottom" secondItem="SCn-On-yqD" secondAttribute="bottom" constant="20" symbolic="YES" id="nul-0j-Spv"/>
+                            <constraint firstItem="6If-oR-aMO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="28" id="oB1-IT-dvL"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lee-82-SM5" secondAttribute="trailing" constant="68" id="sAt-sT-5tq"/>
+                            <constraint firstItem="I4j-Xb-oCT" firstAttribute="top" secondItem="wz8-xI-l13" secondAttribute="bottom" constant="67" id="uHk-tm-NJY"/>
+                            <constraint firstItem="SCn-On-yqD" firstAttribute="top" secondItem="WKC-OT-1sB" secondAttribute="bottom" constant="17" id="w7H-f2-g4g"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="latLonSearchButton" destination="I4j-Xb-oCT" id="YPk-wD-vl0"/>
+                        <outlet property="latitudeTextField" destination="XNL-jC-g8J" id="fUw-23-aHl"/>
+                        <outlet property="longitudeTextField" destination="7p8-tw-FTg" id="bwo-Di-BTW"/>
+                        <outlet property="photoImageView" destination="AUN-0m-5oH" id="1fB-cJ-CDY"/>
+                        <outlet property="photoTitleLabel" destination="SCn-On-yqD" id="ua4-hq-grT"/>
+                        <outlet property="phraseSearchButton" destination="wz8-xI-l13" id="Wdk-PG-qrh"/>
+                        <outlet property="phraseTextField" destination="5w6-38-COY" id="18Z-DB-yBf"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="117.59999999999999" y="95.802098950524751"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Search Icon" width="24" height="24"/>
+    </resources>
+</document>
